@@ -28,7 +28,7 @@ export default {
         Optimize : getOptimizeList,
         Node : getNodeList,
         Webpack : getWebpackList,
-        Javascrip : getJavascriptList
+        Javascript : getJavascriptList
       }
     };
   },

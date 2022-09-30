@@ -1,6 +1,7 @@
 const Mock = require('mockjs')
 import CssList from '@/static/answers/Css.js'
 import HtmlList from '@/static/answers/Html.js'
+import JavascriptList from '@/static/answers/Js'
 import NetList from '@/static/answers/Net.js'
 import OptimizeList from '@/static/answers/Optimize.js'
 import ReactList from '@/static/answers/React.js'
@@ -14,12 +15,12 @@ Mock.setup({
 const list = [ 
       {
         id: 1,
-        name:'HTML',
+        name:'Html',
         img: 'https://img1.baidu.com/it/u=3247278276,1211678076&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=500',
       },
       {
         id: 2,
-        name:"CSS",
+        name:"Css",
         img: 'https://img1.baidu.com/it/u=81277077,3948587356&fm=253&fmt=auto&app=120&f=PNG?w=500&h=500',
       },
       {
@@ -99,4 +100,8 @@ Mock.mock('/write','get',() => {
 
 Mock.mock('/webpack','get',() => {
   return WebpackList;
+})
+
+Mock.mock('/javascript','get',() => {
+  return JavascriptList;
 })
